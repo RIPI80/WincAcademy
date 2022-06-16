@@ -1,2 +1,0 @@
-# WincAcademy
-Toggle assignment
