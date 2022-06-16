@@ -1,0 +1,92 @@
+body {
+    background-color: lavenderblush;
+    display: block;
+    margin: 10px;
+    font-family: sans-serif;
+  }
+
+.pink
+{
+   background-color:pink;
+}
+ .purple
+ {
+    background-color: purple;
+ }
+ .yellow
+{
+   background-color: yellow;
+}
+.blue
+{
+   background-color: blue;
+}
+
+label[for="toggle"] {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    color: black;
+    z-index: 10;
+    font-size: 5px;
+}
+
+.label img {
+    width: 3%;
+    height: 5%;
+  }
+
+.navigation--responsive {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+svg.hamburger {
+    display: none;
+}
+
+.navigation--responsive {
+    display: block;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    transition: top 1s;
+}
+
+.navigation--responsive ul {
+    display: block;
+    list-style: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 85px 0 0 0;
+    padding: 0;
+}
+
+.navigation--responsive ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation--responsive li a {
+    padding: 20px 20px 20px 20px;
+    text-decoration:none;
+    color:black;
+    font-family:Arial;
+}  
+
+#toggle:checked ~ .navigation--responsive {
+    top: 0vh;
+} 
+
